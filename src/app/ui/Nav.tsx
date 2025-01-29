@@ -63,7 +63,7 @@ function Navbar() {
               </li>
               <li>
               <Link
-                href="/"
+                href="/#work"
                 className="block py-2 px-3 rounded md:bg-transparent md:p-0"
                 aria-current="page"
               >
