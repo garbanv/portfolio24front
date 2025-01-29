@@ -1,5 +1,5 @@
 "use client";
-import next from "next";
+
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -11,15 +11,15 @@ type SlideProps = {
   url: string;
 };
 
-const handlePrevImage = (): void => {
+/* const handlePrevImage = (): void => {
     console.log("prev image")
 }
 
 const handleNextImage = (): void => {
     console.log("next image")
-}
+} */
 
-const Slideshow = ({ image, description, name, client, url }: SlideProps) => {
+const Slideshow = ({ image,  name, client, url }: SlideProps) => {
   const [newImage, setNewImage] = useState<number>(0);
   /* 
     const updateImage = () => {
