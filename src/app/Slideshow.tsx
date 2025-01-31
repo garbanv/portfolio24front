@@ -38,13 +38,13 @@ const Slideshow = ({ image,  name, client, url }: SlideProps) => {
   /*     updateImage() */
 
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 items-center justify-content-center">
-      <div className="animate-pulse">
+    <div className="grid items-center justify-center ">
+      <div className="animate-pulse my-10">
         <p className="text-[50px] text-white font-bold justify-center flex fadeInUp-animation ">
           recent WORK
         </p>
       </div>
-      <div className="grid grid-cols-1 justify-center items-center ">
+      <div className="grid justify-center items-center justify-content-center   ">
         <Link href={url} target="_blank">
           <div className="group relative  overflow-hidden rounded-lg shadow-lg transition-all duration-300">
             <img
