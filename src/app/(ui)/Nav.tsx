@@ -21,7 +21,7 @@ function Navbar() {
         >
        
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            {/* A Garban */}
+           
           </span>
         </Link>
         <button
