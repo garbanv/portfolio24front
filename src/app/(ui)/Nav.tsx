@@ -1,17 +1,17 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link"; // Assuming you're using Next.js for the Link component
-import { usePathname } from 'next/navigation'
+import Link from "next/link"; 
+
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const pathname = usePathname()
-  console.log("pathname",pathname)
 
-  pathname === "/" ? console.log("homeverga") : 'pop'
+
+
+
   return (
     <nav className=" dark:bg-gray-900 sticky top-0 z-50">
       <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
