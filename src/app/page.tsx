@@ -1,5 +1,7 @@
 
+import Hero from "./(ui)/Hero";
 import Slideshow from "./Slideshow";
+
 
 interface Project {
   id: number;
@@ -31,9 +33,9 @@ client:'Platformable',
   },
   {
     id: 2,
-    name: "APIdays",
+    name: "APILandscape",
     image: [
-      '/work/work1/work1-1.png',
+      '/work/work2/work2-1.png',
       '/work/work1/work1-2.png',
       '/work/work1/work1-3.png',
       '/work/work1/work1-4.png',
@@ -47,37 +49,24 @@ client:'Platformable',
   
 ];
 
+
+
+
 export default function Home() {
+
+
+
   return (
     <div className="min-h-screen">
       {/* <div className="grid  items-center justify-items-center min-h-screen  p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"> */}
 
-      <section className=" m-auto grid  ">
-        <div className="grid items-center  h-screen ">
-          <div className="grid place-items-center gap-x-5 leading-none ">
-            <h1 className="customFont lg:text-[350px] md:text-[200px] text-[100px] fadeInUp-animation leading-3 ">
-              ALEXEI
-            </h1>
-            <h1 className="customFont lg:text-[350px] md:text-[200px] text-[100px] fadeInUp-animation ">
-              GARBAN
-            </h1>
-          </div>
-          <div className="md:grid justify-center  absolute bottom-2 w-full">
-            <p className="text-center md:text-md text-xs">
-              Software engineer & music producer
-            </p>
-          </div>
-        </div>
-      </section>
+    <Hero />
       <section
         id="work"
-        className="bg-black items-center grid  shadow-md bg-fixed px-5 h-screen"
+        className=" items-center grid   bg-fixed  "
       >
 
-        <Slideshow image={projects[0].image} 
-        description={projects[0].description} name={projects[0].name} 
-        client={projects[0].client}
-        url={projects[0].url}/>
+        <Slideshow slides={projects}/>
 
        {/*  <Slideshow props={projects}/> */}
        

@@ -5,7 +5,7 @@ import Image from 'next/image'
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center py-10">
+    <footer className="row-start-3 bg-black text-white flex gap-6 flex-wrap items-center justify-center py-5">
     <a
       className="flex items-center gap-2 hover:underline hover:underline-offset-4"
       href="https://github.com/garbanv"
@@ -49,7 +49,7 @@ export const Footer = () => {
         width={16}
         height={16}
       />
-      My music 
+      Music 
     </a>
     <p>{currentYear}</p>
   </footer>
