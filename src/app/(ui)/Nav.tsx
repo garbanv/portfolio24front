@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link"; 
-
+import { useInView } from "react-intersection-observer";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -10,10 +10,16 @@ function Navbar() {
   };
 
 
-
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+    triggerOnce: true,
+  });
 
   return (
-    <nav className=" dark:bg-gray-900 sticky top-0 z-50">
+    <nav className={`sticky top-0 z-50 transition-all duration-300 ${
+            inView ? "slide-bottom" : ""
+          }`} ref={ref}>
       <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"

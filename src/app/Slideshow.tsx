@@ -62,9 +62,9 @@ const Slideshow = (props: { slides: SlideProps }) => {
               className=" w-full cursor-pointer h-full object-cover rounded-lg transition-all duration-300 group-hover:brightness-50 group-hover:blur-sm"
             />
           </Link>
-          <div className="relative -top-14 left-5">
-            <h3 className="text-white font-bold  rounded-md ">{element.name}</h3>
-            <span className="text-xs text-white ">{element.client}</span>
+          <div className="relative -top-16 left-5">
+            <h3 className="text-white font-bold text-2xl rounded-md ">{element.name}</h3>
+            <span className="text-xs text-black font-bold rounded-md bg-white py-1 px-2 bg-white">{element.client}</span>
           </div>
         </div>)
        })} 
