@@ -20,8 +20,7 @@ interface MetaProps {
   title?: string;
   description?: string;
   keywords?: string;
-  openGraph?: OpenGraph | null;
-  [key: string]: any; // Allow other meta tags
+  openGraph?: OpenGraph | null; // Allow other meta tags
   children?: React.ReactNode;
 }
 
