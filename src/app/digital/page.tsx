@@ -157,7 +157,7 @@ export default function DigitalSovereigntyPage() {
 
       {/* --- CTA --- */}
       <section className="py-20 text-center border-t border-accent">
-        <h2 className="text-[5vw] font-serif italic mb-8">"Code is Law."</h2>
+        {/*   <h2 className="text-[5vw] font-serif italic mb-8">"Code is Law."</h2> */}
         <Link
           href="/contact"
           className="font-mono border-b border-foreground pb-1 hover:pb-2 transition-all"

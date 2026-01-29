@@ -32,7 +32,9 @@ export function generateWebsiteSchema() {
   }
 }
 
-export function generatePortfolioSchema(projects: any[]) {
+export function generatePortfolioSchema(
+  projects: { title: string; description: string; url: string }[],
+) {
   return {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
