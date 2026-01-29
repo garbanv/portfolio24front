@@ -62,8 +62,8 @@ export default function Home() {
           <span className="block animate-slideUp [animation-delay:100ms] ml-[10vw] md:ml-[15vw]">
             developer
           </span>
-          <span className="block animate-slideUp [animation-delay:200ms] text-[6vw]">
-            <span className="font-serif italic">&</span> Ambient producer
+          <span className="block animate-slideUp [animation-delay:200ms] text-[2vw]">
+            <span className="font-serif italic">& </span> Ambient music producer
           </span>
         </h1>
 
