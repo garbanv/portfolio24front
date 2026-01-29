@@ -21,7 +21,7 @@ export async function generateMetadata({
   return generatePageMetadata({
     title: project.title,
     description: project.description,
-    image: project.images?.[0] || "/AG.png",
+    image: project.images?.[0] || "/AG.jpg",
     path: `/projects/${id}`,
     //tags: project.technologies,
   })
@@ -127,7 +127,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <div className="flex justify-center items-center">
             <a href={project.url} target="_blank" rel="noopener noreferrer">
               {" "}
-              <img src={project.images?.[0] || "/AG.png"} alt={project.title} />
+              <img src={project.images?.[0] || "/AG.jpg"} alt={project.title} />
             </a>
             {/* <span className="mono">[ PROJECT_IMAGE_PLACEHOLDER ]</span> */}
           </div>
