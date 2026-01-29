@@ -1,0 +1,74 @@
+.header {
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: var(--bg); /* To cover content when scrolling */
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-mono);
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  z-index: 102;
+  color: white;
+}
+
+.desktopNav {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.85rem;
+}
+
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white !important;
+  font-size: 1rem;
+  z-index: 102;
+}
+
+/* Mobile Logic */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 101;
+}
+
+.mobileMenu.open {
+  transform: translateY(0);
+}
+
+.mobileLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .desktopNav {
+    display: none;
+  }
+  .menuToggle {
+    display: block;
+  }
+}
