@@ -1,0 +1,24 @@
+{
+  "name": "Alexei Garban - Software Developer Portfolio",
+  "short_name": "AG Portfolio",
+  "description": "Minimalist Software Developer Portfolio showcasing projects in React, Next.js, and modern web technologies",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logoIcon.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/AG.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
