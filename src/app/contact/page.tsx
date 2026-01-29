@@ -15,7 +15,7 @@ export default function Contact() {
     >
       <div>
         <h1 style={{ fontSize: "12vw", lineHeight: "0.8" }}>
-          LET'S
+          LET`S
           <br />
           TALK
         </h1>
