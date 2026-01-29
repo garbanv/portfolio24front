@@ -17,7 +17,7 @@ interface GenerateMetadataProps {
 export function generatePageMetadata({
   title,
   description,
-  image = "/AG.png",
+  image = "/AG.jpg",
   type = "website",
   publishedTime,
   modifiedTime,
