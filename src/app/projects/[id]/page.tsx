@@ -5,13 +5,14 @@ import { generatePageMetadata } from "@/app/lib/metadata"
 import type { Metadata } from "next"
 
 interface ProjectPageProps {
-  params: { id: string }
+  params: Promise<{ id: string }>
 }
 
 export async function generateMetadata({
   params,
 }: ProjectPageProps): Promise<Metadata> {
-  const project = projects.find((p) => p.id === params.id)
+  const { id } = await params
+  const project = projects.find((p) => p.id === id)
 
   if (!project) {
     return {}
@@ -21,13 +22,14 @@ export async function generateMetadata({
     title: project.title,
     description: project.description,
     image: project.images?.[0] || "/AG.png",
-    path: `/projects/${params.id}`,
+    path: `/projects/${id}`,
     //tags: project.technologies,
   })
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = projects.find((p) => p.id === params.id)
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { id } = await params
+  const project = projects.find((p) => p.id === id)
 
   if (!project) {
     notFound()
