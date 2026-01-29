@@ -7,11 +7,11 @@ export function generatePersonSchema() {
     image: "https://agarban.com/AG.jpg",
     jobTitle: "Software Developer",
     description:
-      "Software Developer specializing in React, Next.js, and modern web technologies",
+      "Fullstack Software Developer specializing in React, Next.js, NodeJs and modern web technologies",
     email: "alexei@agarban.com",
     sameAs: [
-      "https://github.com/alexeigarban",
-      "https://linkedin.com/in/alexeigarban",
+      "https://github.com/garbav",
+      "https://www.linkedin.com/in/alexei-garban-valdeon",
       "https://twitter.com/alexei_garban",
     ],
   }

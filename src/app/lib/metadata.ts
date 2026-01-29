@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://agarban.com"
+const siteUrl = "https://agarban.com"
 
 interface GenerateMetadataProps {
   title: string
@@ -56,7 +56,7 @@ export function generatePageMetadata({
       title,
       description,
       images: [image],
-      creator: "@alexeigarban",
+      creator: "@alexei_garban",
     },
 
     alternates: {
