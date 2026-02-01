@@ -14,7 +14,6 @@
 }
 
 .logo {
-  font-family: var(--font-mono);
   font-weight: bold;
   letter-spacing: -0.5px;
   z-index: 102;
