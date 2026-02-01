@@ -1,10 +1,11 @@
 import { MetadataRoute } from "next"
+import { blogPosts } from "@/app/lib/blog-data"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = "https://agarban.com"
 
   // Static routes
-  const routes = ["", "/contact", "/digital"].map((route) => ({
+  const routes = ["", "/contact", "/digital", "/blog"].map((route) => ({
     url: `${siteUrl}${route}`,
     lastModified: new Date().toISOString(),
     changeFrequency: "monthly" as const,
@@ -19,5 +20,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...routes, ...projectRoutes]
+  // Blog post routes
+  const blogRoutes = blogPosts.map((post) => ({
+    url: `${siteUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date).toISOString(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }))
+
+  return [...routes, ...projectRoutes, ...blogRoutes]
 }
