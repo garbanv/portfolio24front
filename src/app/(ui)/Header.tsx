@@ -19,8 +19,9 @@ export default function Header() {
         <nav className={`${styles.desktopNav} mono text-[#f8f8f8] `}>
           <Link href="/">HOME</Link>
           <Link href="/#projects">PROJECTS</Link>
-          <Link href="/contact">CONTACT</Link>
+          <Link href="/blog">BLOG</Link>
           <Link href="/digital">DIGITAL SOVEREIGNTY</Link>
+          <Link href="/contact">CONTACT</Link>
         </nav>
 
         {/* Mobile Nav Toggle */}
@@ -40,11 +41,14 @@ export default function Header() {
             <Link href="/#projects" onClick={() => setMenuOpen(false)}>
               PROJECTS
             </Link>
-            <Link href="/contact" onClick={() => setMenuOpen(false)}>
-              CONTACT
+            <Link href="/blog" onClick={() => setMenuOpen(false)}>
+              BLOG
             </Link>
             <Link href="/digital" onClick={() => setMenuOpen(false)}>
               DIGITAL SOVEREIGNTY
+            </Link>
+            <Link href="/contact" onClick={() => setMenuOpen(false)}>
+              CONTACT
             </Link>
           </nav>
         </div>

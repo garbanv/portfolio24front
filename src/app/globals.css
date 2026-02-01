@@ -6,6 +6,7 @@
 
 :root {
   --background: #ffffff;
+  --link-background: #0099bb;
   --foreground: #171717;
   --bg: #050505;
   --fg: #f0f0f0;
@@ -354,4 +355,13 @@ body {
   transform: perspective(500px) rotateX(20deg) rotateY(-10deg) rotateZ(10deg);
   z-index: -1;
   pointer-events: none;
+}
+
+.blog-content a {
+  font-weight: bold;
+  color: inherit;
+  background-color: var(--accent);
+  padding: 4px 8px;
+  color: white;
+  border-radius: 10px;
 }
