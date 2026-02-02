@@ -1,7 +1,7 @@
 {
-  "name": "Alexei Garban - Software Developer Portfolio",
+  "name": "Alexei Garban - Fullstack Software Developer Portfolio",
   "short_name": "AG Portfolio",
-  "description": "Minimalist Software Developer Portfolio showcasing projects in React, Next.js, and modern web technologies",
+  "description": "Minimalist Fullstack Software Developer Portfolio showcasing projects in ReactJs, NodeJs, Python, SQL and modern technologies",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
