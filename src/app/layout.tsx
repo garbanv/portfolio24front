@@ -3,6 +3,7 @@ import Header from "@/app/(ui)/Header"
 import CustomCursor from "@/app/(ui)/CustomCursor"
 import type { Metadata } from "next"
 import { generatePersonSchema, generateWebsiteSchema } from "@/app/lib/schema"
+import { GoogleAnalytics } from "@next/third-parties/google"
 /* import Nav from "./(ui)/Nav";
 import Footer from '@/app/(ui)/Footer' */
 
@@ -97,6 +98,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ""} />
         <div className="noise"></div>
         {/*  <CustomCursor /> */}
         <Header />
