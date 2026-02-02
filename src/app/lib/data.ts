@@ -4,7 +4,8 @@ export const projects = [
   {
     id: "APILandscape",
     title: "API Landscape",
-    category: "REACT / NextJs / NODE.JS",
+    category:
+      "ReactJs / NextJs / Node.JS, SQL, OVH (previously Digitalocean), Coolify (previously Netlify), Cloud",
     year: "2025",
     description:
       "A comprehensive view of all stakeholders creating the programmable economy",
@@ -16,7 +17,8 @@ export const projects = [
   {
     id: "OpenBankingAccelerator",
     title: "Open Banking Accelerator",
-    category: "REACT / NextJs / NODE.JS",
+    category:
+      "ReactJs / NextJs / Node.JS, SQL, OVH (previously Digitalocean), Coolify (previously Netlify), Cloud",
     year: "2026",
     description:
       "Get updates on global open banking regulations, and understand aggregators and fintech ecosystems",
