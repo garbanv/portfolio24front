@@ -29,13 +29,13 @@ export async function generateMetadata({
       publishedTime: post.date,
       authors: ["Alexei Garban", "agarban.com"],
       tags: [post.category],
-      images: "/AG.jpg",
+      images: [`${post?.featureImg || "/AG.jpg"}`],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      images: ["/AG.jpg"],
+      images: [`${post?.featureImg || "/AG.jpg"}`],
     },
   }
 }
@@ -99,7 +99,9 @@ export default async function BlogPost({ params }: BlogPostProps) {
             </span>
             <span className="py-0.5">{post?.readTime} READ</span>
           </div>
-
+          <div className="flex justify-center items-center ">
+            <img src={post?.featureImg || "/AG.jpg"} alt="" className="my-5" />
+          </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-light leading-[0.95] tracking-tight uppercase mb-8">
             {post?.title}
           </h1>
@@ -120,7 +122,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
         <div className="mt-24 pt-8 border-t border-dashed border-accent font-mono text-xs opacity-50 flex justify-between">
           <span>END_OF_FILE</span>
-          <span>SHA256: 8a9f...e4b1</span>
+          {/* <span>SHA256: 8a9f...e4b1</span> */}
         </div>
 
         <style>{`

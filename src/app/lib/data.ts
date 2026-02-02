@@ -1,5 +1,3 @@
-import { url } from "inspector"
-
 export const projects = [
   {
     id: "APILandscape",
