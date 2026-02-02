@@ -4,6 +4,7 @@ export const blogPosts = [
     title: "Is your data truly sovereign?",
     date: "2026-02-02",
     category: "INFRASTRUCTURE",
+    featureImg: "/blog/digitalSov.png",
     readTime: "2 MIN",
     excerpt:
       "Relying on US-based services isn't just a technical choice anymore—it's a compliance and strategic one.",
