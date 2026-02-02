@@ -1,8 +1,10 @@
+import { GoogleAnalytics } from "@next/third-parties/google"
 import Link from "next/link"
 
 export default function DigitalSovereigntyPage() {
   return (
     <div className="w-[90%] max-w-7xl mx-auto">
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ""} />
       {/* --- HERO SECTION --- */}
       <section className="min-h-[90vh] flex flex-col justify-center relative border-b border-accent overflow-hidden pt-20">
         {/* Background Abstract: The 'Iron Curtain' of Data */}
