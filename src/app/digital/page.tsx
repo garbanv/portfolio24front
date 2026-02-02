@@ -23,7 +23,7 @@ export default function DigitalSovereigntyPage() {
           </h1>
 
           <p className="max-w-xl text-lg md:text-xl font-mono leading-relaxed opacity-80 mb-12">
-            The era of the US CLOUD ACT is ending.
+            The era of accepting the US CLOUD ACT is ending.
             <br />
             Migrate your infrastructure from Silicon Valley to sovereign
             European hardware. Reclaim ownership.
