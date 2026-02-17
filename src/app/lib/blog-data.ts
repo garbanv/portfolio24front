@@ -1,5 +1,63 @@
 export const blogPosts = [
   {
+    slug: "the-interface-is-not-the-system",
+    title: "The Interface Is Not the System",
+    date: "2026-02-12",
+    category: "ARCHITECTURE",
+    featureImg: "/blog/interfaceIsNotSystem.png",
+    readTime: "3 MIN",
+    excerpt:
+      "If removing one tool breaks your business logic, you don't control your system.",
+    content: `
+     <p> During a recent infrastructure migration from the US to Europe, I discovered something uncomfortable.</p>
+
+     <p>Companies were looking at their data every day.</p>
+     <p>Through dashboards.</p>
+     <p>Through automations.</p>
+     <p>Through internal tools.</p>
+     <p>It all looked consistent.</p>
+     <p>But it was not.</p>
+     <p>  
+Most of them were using n8n,Make, NocoDB, and a PostgreSQL database.
+At first it looked like everything was connected. Relations appeared to be defined. </p>
+
+<p>The data seemed to be structured.</p>
+<p>But when looking at NocoDB (tool to manage databases) it was showing a representation of relationships, not the real model as it truly existed in PostgreSQL. This is ok when you only need to use that data to create reports or something else made by human analysts but is not ok when you want to use the data for another purpose.
+When I needed to remove dependencies and stop relying on the interface layer, the abstraction collapsed. </p>
+
+<h3>What did I find?</h3>
+<ul>
+  <li>Virtual relations not enforced at database level</li>
+  <li>Logic embedded in automations instead of schema</li>
+</ul>
+
+
+<p>Queries written around what the ui exposed,  not what the data actually was in the database</p>
+
+<p>Data that was only accessible through the interface layer, not directly from the database</p>
+
+<p>In the end, the system was not the database. The system was the interface.</p>
+<p>It had structure in appearance. Not in architecture.</p>
+<p>This is more important than it sounds.</p>
+<p>Because many companies believe they own their systems when what they really own is a stack of tools connected by convenience.</p>
+<p>If removing one tool breaks your business logic, you don't control your system.</p>
+
+
+
+<p>You are renting coherence.</p>
+<p>Migration exposes this.</p>
+<p>Tool replacement exposes this.</p>
+
+
+<p>Moving servers from the US to Europe is easy. Reclaiming architectural clarity is not.</p>
+<p>In music production, noise is not the enemy. Unstructured noise is.</p>
+<p>In software, abstractions are not the problem. Unexamined abstractions are.</p>
+<p>A system should survive the removal of its interface. If it doesn't, the interface was the system.</p>
+<p>And that is a risk.</p>
+
+    `,
+  },
+  {
     slug: "is-your-data-truly-sovereign",
     title: "Is your data truly sovereign?",
     date: "2026-02-02",
